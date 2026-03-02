@@ -125,14 +125,32 @@ All AI requests are handled asynchronously to maintain performance.
 ## 🧪 Getting Started (Local Setup)
 
 ```bash
-# Clone the repository
-git clone https://github.com/AnuragMishra9341/QuickAI.git
+## 🧪 Getting Started (Local Setup)
 
-# Install dependencies
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/SahilPundpal/QUickAI.git
+```
+
+### 2️⃣ Setup Backend
+```bash
+cd server
 npm install
-
-# Add environment variables
-# (Gemini API KEY,Clerk Keys,clipdrop keys,neon database URL)
-
-# Run the development server
 npm run dev
+```
+
+### 3️⃣ Setup Frontend (in a new terminal)
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### 4️⃣ Add Environment Variables
+
+Create a `.env` file inside the `server` folder and add:
+
+- Gemini API Key  
+- Clerk Keys  
+- ClipDrop API Key  
+- Neon Database URL  
