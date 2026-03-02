@@ -1,0 +1,42 @@
+import React, { useEffect } from 'react'
+import { Routes,Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import  Layout  from './pages/Layout.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import WriteArticle from './pages/WriteArticle.jsx';
+import BlogTitles from './pages/BlogTitles.jsx';
+import Generateimages from './pages/Generateimages.jsx';
+import RemoveBackground from './pages/RemoveBackground.jsx';
+import RemoveObject from './pages/RemoveObject.jsx';
+import ReviewResume from './pages/ReviewResume.jsx';
+import Community from './pages/Community.jsx';
+import { useAuth } from '@clerk/clerk-react';
+import {Toaster} from 'react-hot-toast';
+const App = () => {
+  // const {getToken} = useAuth();
+  // useEffect(()=>{
+  //   getToken().then((token)=> console.log(token));
+  // },[])
+  
+  return (
+    <div>
+      <Toaster/>
+    <Routes>
+      <Route path='/'  element={<Home/>}/>
+      <Route path = '/ai' element={<Layout/>}>
+      <Route index element={<Dashboard/>}></Route>
+      <Route path = 'write-article' element={<WriteArticle/>}></Route>
+       <Route path = 'blog-titles' element={<BlogTitles/>}></Route>
+        <Route path = 'generate-images' element={<Generateimages/>}></Route>
+         <Route path = 'remove-background' element={<RemoveBackground/>}></Route>
+         <Route path = 'remove-object' element={<RemoveObject/>}></Route>
+         <Route path = 'review-resume' element={<ReviewResume/>}></Route>
+         <Route path = 'community' element={<Community/>}></Route>
+          
+      </Route>
+    </Routes>
+    </div>
+  )
+}
+
+export default App
