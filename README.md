@@ -3,7 +3,6 @@
 QuickAI is a full-stack SaaS-style web application that provides multiple AI-powered tools for content creation and image processing through a single unified dashboard. It solves the problem of fragmented AI usage by offering centralized access, usage tracking, and tier-based control.
 
 🚀 **Live Demo:** https://quick-ai-saas.vercel.app/  
-📂 **GitHub Repository:** https://github.com/SahilPundpal/QUickAI
 
 ---
 
